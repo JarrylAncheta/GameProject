@@ -13,7 +13,7 @@ function setup(){
   button.mousePressed(togglePlaying);
   background(51);
   button.style('font-size', '25px');
-  button.position(570,10);
+  button.position(640,10);
 }
 
 function togglePlaying() {
@@ -43,7 +43,7 @@ function draw(){
   textSize(40);
   stroke(82, 82, 82);
   strokeWeight(2.5);
-  text("Catch the Snowball", 150, 120);
+  text("Catch the Snowball", 185, 120);
 }
 
 function preload(){
@@ -60,7 +60,7 @@ function mousePressed() {
   }
 }
 
-//Circle colorsl
+//Circle colors
 function newCircle() {
   x = random(windowWidth);
   y = random(windowHeight);
