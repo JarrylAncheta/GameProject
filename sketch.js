@@ -3,6 +3,7 @@ var song;
 var button;
 var x, y;
 var score = 0;
+// Circle size
 const radius = 20;
 var r, g, b;
 
@@ -19,7 +20,7 @@ function setup(){
 function togglePlaying() {
   if (!song.isPlaying()) {
     song.play();
-    button.html("pause");
+    button.html("stop");
 } else {
   song.pause();
   button.html("play");
@@ -33,17 +34,19 @@ function loaded() {
 
 function draw(){
   imageMode(CENTER);
+  // Background image size
   image(landscape, width/2, height/2, 1440, 730);
   // Draw a circle
    noStroke();
   fill(r, g, b);
   ellipse(x, y, radius*1.5, radius*1.5);
+  // Positioning and customization
   text("Score: " + score, 20, 50);
-
   textSize(22);
   textSize(70);
   stroke(82, 82, 82);
   strokeWeight(2.5);
+  // Positioning
   text("Catch the Snowball", 565, 150);
   textFont(pressStart);
 
@@ -65,14 +68,15 @@ function mousePressed() {
   }
 }
 
-//Circle colors
+// Circle randomizer
 function newCircle() {
   x = random(windowWidth);
   y = random(windowHeight);
+  // Color of circles
   r = random(255);
   g = random(255);
   b = random(255);
 }
 
-//Determines how fast a new circle appears
 setInterval(newCircle, 900);
+
