@@ -13,7 +13,7 @@ function setup(){
   button.mousePressed(togglePlaying);
   background(51);
   button.style('font-size', '25px');
-  button.position(640,10);
+  button.position(1320,10);
 }
 
 function togglePlaying() {
@@ -33,7 +33,7 @@ function loaded() {
 
 function draw(){
   imageMode(CENTER);
-  image(landscape, width/2, height/2, 750, 590);
+  image(landscape, width/2, height/2, 1440, 730);
   // Draw a circle
    noStroke();
   fill(r, g, b);
@@ -44,13 +44,13 @@ function draw(){
   textSize(70);
   stroke(82, 82, 82);
   strokeWeight(2.5);
-  text("Catch the Snowball", 185, 120);
+  text("Catch the Snowball", 545, 150);
   textFont(pressStart);
 
 }
 
 function preload(){
-  pressStart = loadFont('The Perfect Christmas.ttf');
+  pressStart = loadFont('Reindeer Christmas - Personal Use.otf');
   landscape = loadImage('Snow.jpg')
 
 }
