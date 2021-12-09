@@ -12,7 +12,7 @@ function setup(){
   button = createButton("play");
   button.mousePressed(togglePlaying);
   background(51);
-  button.style('font-size', '25px');
+  button.style('font-size', '35px');
   button.position(1320,10);
 }
 
@@ -44,7 +44,7 @@ function draw(){
   textSize(70);
   stroke(82, 82, 82);
   strokeWeight(2.5);
-  text("Catch the Snowball", 545, 150);
+  text("Catch the Snowball", 565, 150);
   textFont(pressStart);
 
 }
