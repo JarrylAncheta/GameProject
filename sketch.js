@@ -38,16 +38,21 @@ function draw(){
    noStroke();
   fill(r, g, b);
   ellipse(x, y, radius*1.5, radius*1.5);
-  textSize(32);
-  text("Score: " + score, 10, 30);
-  textSize(40);
+  text("Score: " + score, 5, 50);
+
+  textSize(22);
+  textSize(70);
   stroke(82, 82, 82);
   strokeWeight(2.5);
   text("Catch the Snowball", 185, 120);
+  textFont(pressStart);
+
 }
 
 function preload(){
+  pressStart = loadFont('The Perfect Christmas.ttf');
   landscape = loadImage('Snow.jpg')
+
 }
 
 // When the user clicks the mouse
